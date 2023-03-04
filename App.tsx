@@ -1,4 +1,4 @@
-import {StatusBar, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {StatusBar, StyleSheet, Text, View} from 'react-native';
 import Teste from './src/components/teste';
 import React from 'react';
 
