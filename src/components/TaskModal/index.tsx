@@ -18,7 +18,6 @@ const TaskModal = (props: TaskModalProps) => {
   const [date, setDate] = useState(new Date());
 
   const handleAddTask = () => {
-    console.log({title, description, date});
     onAddTask({title, description, date, id: 1});
     setTitle('');
     setDescription('');
@@ -46,7 +45,6 @@ const TaskModal = (props: TaskModalProps) => {
           onChangeText={text => setDescription(text)}
         />
         <DatePicker
-          //make it appear as a modal
           mode="date"
           date={date}
           onDateChange={selectedDate => setDate(new Date(selectedDate))}
