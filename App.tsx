@@ -1,22 +1,15 @@
-import {StatusBar, StyleSheet, Text, View} from 'react-native';
-import Teste from './src/components/teste';
+import {
+  SafeAreaView
+} from 'react-native';
 import React from 'react';
+import TodoList from './src/screens/Todos';
 
 const App = () => {
   return (
-    <View>
-      <StatusBar />
-      <Text style={styles.textTest}>Bom dia!</Text>
-      <Teste />
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+      <TodoList />
+    </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  textTest: {
-    fontFamily: 'cochin',
-    fontSize: 45,
-  },
-});
 
 export default App;
